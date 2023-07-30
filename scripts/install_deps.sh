@@ -44,9 +44,10 @@ if [[ $OSTYPE == darwin* ]]; then
     fi
     brew install portaudio fluid-synth ffmpeg
 elif [[ $OSTYPE == linux* ]]; then
-    sudo apt update
-    sudo apt install -y build-essential wget
-    sudo apt install -y fluidsynth portaudio19-dev ffmpeg
+    # sudo apt update
+    # sudo apt install -y build-essential wget
+    # sudo apt install -y fluidsynth portaudio19-dev ffmpeg
+    echo "Skipping sudo"
 else
     echo "Unsupported OS"
 fi
